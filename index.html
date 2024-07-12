@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Display</title>
+    <link rel="stylesheet" href="styles.css">
 <script defer src="/bundle.js"></script></head>
 <body>
-    <h1>Pure your mind from all evil</h1>
-    
+    <div class="weather-container">
+        <div class="weather-info">
+            <p class="condition" id="condition">Mist</p>
+            <h1 id="target">NEW DELHI, INDIA</h1>
+            <div class="temperature" >
+                <h2 id="temperature">90<span>°C</span></h2>
+                <div class="details">
+                    <p id="feels-like">FEELS LIKE: 90°C</p>
+                    <p id="wind">WIND: 4 MPH</p>
+                    <p id="humidity">HUMIDITY: 63%</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form id="form">
+                <textarea id="place" name="place" placeholder="Search city"></textarea>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
